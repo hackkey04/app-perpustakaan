@@ -40,4 +40,9 @@ class LoanController extends Controller
     {
         return "LoanController@destroy, id: {$id}";
     }
+
+    public function kembalikan(string $id)
+    {
+        return "LoanController@kembalikan, id: {$id}";
+    }
 }
