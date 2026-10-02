@@ -18,6 +18,58 @@
         .btn { display: inline-block; padding: 6px 14px; background: #2563eb; color: #fff; text-decoration: none; border-radius: 4px; border: none; cursor: pointer; }
         form.inline { display: inline; }
         footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; border-top: 1px solid #e5e7eb; margin-top: 40px; }
+        nav[role="navigation"] svg {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+        nav[role="navigation"] > div:first-child {
+            display: none;
+        }
+        nav[role="navigation"] > div:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav[role="navigation"] a, 
+        nav[role="navigation"] span {
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            color: #374151;
+            background: #fff;
+        }
+        nav[role="navigation"] span[aria-current="page"] span {
+            background: #2563eb;
+            color: #fff;
+            border-color: #2563eb;
+            font-weight: bold;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .badge-dipinjam {
+            background: #fef3c7; /* Kuning / oranye lembut */
+            color: #92400e;
+        }
+        .badge-dikembalikan {
+            background: #d1fae5; /* Hijau (seperti .alert-success) */
+            color: #065f46;
+        }
+        .badge-terlambat {
+            background: #fee2e2; /* Merah */
+            color: #991b1b;
+        }
+
     </style>
 </head>
 <body>

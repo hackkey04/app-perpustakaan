@@ -42,7 +42,7 @@
             <div class="error">{{ $message }}</div>
         @enderror
 
-        <label for="alamat">Alamat (opsional)</label>
+        <label for="alamat">Alamat</label>
         <textarea name="alamat" id="alamat" rows="3">{{ old('alamat') }}</textarea>
 
         <label for="status">Status</label>
