@@ -13,6 +13,7 @@
     <h1>Edit Anggota</h1>
     <p><a href="{{ route('members.index') }}">&larr; Kembali ke daftar anggota</a></p>
 
+
     <form action="{{ route('members.update', $member['id']) }}" method="POST">
         @csrf
         @method('PUT')
