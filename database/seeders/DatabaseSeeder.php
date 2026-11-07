@@ -1,0 +1,21 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Database;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $this->call([
+        UserSeeder::class,
+        CategorySeeder::class,
+        BookSeeder::class,
+        MemberSeeder::class,
+        LoanSeeder::class,
+    ]);
+    }
+}
